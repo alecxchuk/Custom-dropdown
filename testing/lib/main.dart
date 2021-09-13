@@ -164,6 +164,9 @@ class _MyHomePageState extends State<MyHomePage> {
               onChanged: (String? newValue) {
                 setState(() {
                   propertyTypeValue = newValue!;
+                  buildingTypeValue = null;
+                  propertyZoneValue = null;
+                  buildingPurposeValue = null;
                 });
               },
               items: propertyType.map<DropdownMenuItem<String>>((value) {
